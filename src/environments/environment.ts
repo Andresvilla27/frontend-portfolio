@@ -14,8 +14,6 @@ export const environment = {
     measurementId: 'G-FWWG6BDSQ7',
   },
   production: false,
-
-  URL: 'https://backend-portfolio-kksa.onrender.com/'
   
 };
 

@@ -8,7 +8,7 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class SExperienciaService {
-  expURL = environment.URL + 'explab/'
+  expURL = 'https://backend-portfolio-kksa.onrender.com/explab/'
 
   constructor(private httpClient: HttpClient) { }
 
