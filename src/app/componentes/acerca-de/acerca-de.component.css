@@ -1,0 +1,81 @@
+.row{
+    text-align: center;
+    padding: 10px 10px 0 10px;
+    height: 350px;
+    color: white;
+}
+
+
+@media (min-width: 576px){
+    #fotoperfil{
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px #204346;
+        position: absolute;/**/
+        width: 15%;/**/
+        left: 4%;/**/
+    }
+    .descripcion{
+        display: flex;
+        justify-content: center;
+        padding-top: 3%;
+    }
+    .editPersona{
+        display: flex;
+        justify-content: center;
+    }
+    #nombre{
+        font-weight: bold;
+        font-size: 24px;
+        padding-top: 15%;
+        padding-left: 15%;
+    }
+    #titulo{
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 15%;
+    }
+    
+}
+@media (max-width: 575px){
+    #fotoperfil{
+        position: absolute;
+        width: 35%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px #204346;
+        top: 350px;
+        left: 35%;
+    }
+    .editPersona{
+        padding-left: 3%;
+        padding-top: 3%;
+    }
+    #nombre{
+        font-weight: bold;
+        font-size: large;
+    }
+    #titulo{
+        font-weight: bold;
+    }
+
+}
+@media (max-width: 370px){
+    #fotoperfil{
+        top: 70%;
+        left: 31%;
+    }
+}
+/*
+span h1{
+    margin-left: 1.5em;
+    margin-top: 1em;
+}
+span p{
+    margin-left: 3em;
+    margin-top: 2em;
+}
+*/
+
+
+
+
+

@@ -1,0 +1,9 @@
+#logoAP {
+    width: 150px;
+    height: auto;
+}
+@media(max-width: 370px){
+    #logoAP{
+        width: 110px;
+    }
+}

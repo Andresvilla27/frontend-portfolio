@@ -1,0 +1,16 @@
+img {
+    width: 50px;
+    height: auto;
+}
+a {
+    padding-right: 3px;
+}
+@media(max-width: 370px){
+    img{
+        width: 30px;
+    }
+    .btn{
+        width: 80px;
+        padding: 0;
+    }
+}
