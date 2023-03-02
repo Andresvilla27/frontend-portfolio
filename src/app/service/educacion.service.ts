@@ -8,7 +8,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-  URL = 'https://backend-portfolio-kksa.onrender.com/educacion/';
+  URL = environment.URL + 'educacion/';
   
   constructor(private httpClient: HttpClient) { }
 

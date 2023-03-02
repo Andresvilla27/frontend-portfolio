@@ -10,7 +10,7 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = 'https://backend-portfolio-kksa.onrender.com/personas/';
+  URL = environment.URL + 'personas/';
   
   constructor(private httpClient: HttpClient) { }
 
