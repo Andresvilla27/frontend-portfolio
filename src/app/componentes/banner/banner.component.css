@@ -1,6 +1,5 @@
 
 .banner img {
-    
     width: 100%;
     mix-blend-mode: luminosity;
 }
@@ -86,16 +85,15 @@
       margin:0;
     } 
 }
-
-@media(max-width: 575px){
+@media(min-width: 371px){
   .content {
     position: absolute;
-    top: 55%;
-    left: 33%;
+    top: 45%;
+    left: 44%;
     transform: translate(-50%, -50%);
     height: 160px;
     overflow:hidden;
-    
+    width: 370px;
     font-family: sans-serif;
     font-size: 30px;
     line-height: 40px;
@@ -104,18 +102,18 @@
   .content-container {
     font-weight: 600;
     overflow: hidden;
-    height: 40px;
-    padding: 0 40px;
+    height: 38px;
+    padding: 0 30px;
   }
   .content-container:before {
     content: '[';
-    left: 5px;
+    left: 2px;
   }
 
   .content-container:after {
     content: ']';
     position: absolute;
-    right: 5px;
+    right: 2px;
   }
 
   .content-container:after, .content-container:before {

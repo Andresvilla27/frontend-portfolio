@@ -11,7 +11,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 })
 export class AuthService {
   
-  authURL = 'https://backend-portfolio-argentina.onrender.com/auth/';
+  authURL = environment.URL + 'auth/';
 
   constructor(private httpClient: HttpClient) { }
 

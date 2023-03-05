@@ -5,6 +5,11 @@ img {
 a {
     padding-right: 3px;
 }
+@media(min-width: 371px){
+    img{
+        width: 38px;
+    }
+}
 @media(max-width: 370px){
     img{
         width: 30px;

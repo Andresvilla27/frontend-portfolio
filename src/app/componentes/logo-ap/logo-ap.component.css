@@ -2,6 +2,11 @@
     width: 150px;
     height: auto;
 }
+@media(min-width: 371px){
+    #logoAP{
+        width: 120px;
+    }
+}
 @media(max-width: 370px){
     #logoAP{
         width: 110px;
