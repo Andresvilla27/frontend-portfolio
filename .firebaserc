@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "carlos-andres-villafane"
-  }
+    "default": "carlos-andres-villafane",
+    "andres": "carlos-andres-villafane"
+  },
+  "targets": {},
+  "etags": {}
 }
