@@ -25,9 +25,6 @@ import { EditSkillComponent } from './componentes/habilidades/edit-skill.compone
 import { NewSkillComponent } from './componentes/habilidades/new-skill.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { EditAcercaDeComponent } from './componentes/acerca-de/edit-acerca-de.component';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
-import { environment } from '../environments/environment';
-import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -63,9 +60,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
 }),
-    HttpClientModule,
-    //provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideStorage(() => getStorage())
+    HttpClientModule
   ],
   providers: [
     InterceptorProvider
