@@ -1,0 +1,14 @@
+
+h3 {
+    padding-top: 4rem;
+    text-align: center;
+    color: #c0c0c0;
+}
+.circles{
+    padding: 20px 0 0 20px;
+    justify-content: space-around;
+}
+.btn-mod{
+    margin-left: 70rem;
+    margin-top: -33rem;
+}

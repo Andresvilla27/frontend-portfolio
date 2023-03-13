@@ -1,0 +1,59 @@
+
+body{
+   background-color: rgb(34, 53, 71);
+}
+header {
+    position: relative;
+}
+
+#logoAP {
+    height: 5em;
+}
+
+picture {
+
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 50%;
+    
+    
+}
+picture img {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    mix-blend-mode: lighten;
+    filter: grayscale(75%);
+    lighting-color: rgb(143, 154, 154,);
+}
+
+nav h1 {
+    display: flex;
+    justify-content: end;
+    margin-right: 0.5em;
+    font-weight: 600;
+    font-style: oblique;
+    color: aquamarine;
+    transition: all 300ms;
+}
+h1:hover{
+    transform: scale(1.15);
+    
+}
+article {
+    padding: 35px;
+}
+article p {
+    font-size: larger;
+    padding: 75px 25px 75px 25px;
+    color: azure;
+    
+    text-align: center;    
+    transition: all 200ms;
+}
+p:hover {
+    transform: scale(1.15);
+}
+
+
+
