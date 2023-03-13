@@ -1,14 +1,19 @@
-
-h3 {
+.row{
+    padding: 20px;
+}
+h1 {
     padding-top: 4rem;
     text-align: center;
-    color: #c0c0c0;
+    color: white;
 }
-.circles{
-    padding: 20px 0 0 20px;
-    justify-content: space-around;
+.circulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.btn-mod{
-    margin-left: 70rem;
-    margin-top: -33rem;
+.botonskill{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }

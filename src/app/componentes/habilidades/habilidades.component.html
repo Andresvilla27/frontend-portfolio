@@ -1,109 +1,46 @@
 <div class="row">
-  <h3>Habilidades Duras</h3>
-  <div class="row circles">
-    <div class="col-sm-5 col-md-4">
-      <circle-progress
-      [percent]="77"
-      [radius]="100"
-      [outerStrokeWidth]="16"
-      [innerStrokeWidth]="8"
-      [outerStrokeColor]="'#33d0ae'"
-      [innerStrokeColor]="'#c0c0c0'"
-      [animation]="true"
-      [animationDuration]="500"
-      [showSubtitle]="false"
-      [imageSrc]="'../assets/iconos/html.png'"
-      [showImage]="true"
-      [imageHeight]="80"
-      [imageWidth]="80"
-      ></circle-progress>
-    </div>
-    <div class="col-sm-5 col-md-4">
-      <circle-progress
-      [percent]="85"
-      [radius]="100"
-      [outerStrokeWidth]="16"
-      [innerStrokeWidth]="8"
-      [outerStrokeColor]="'#33d0ae'"
-      [innerStrokeColor]="'#c0c0c0'"
-      [animation]="true"
-      [animationDuration]="500"
-      [imageSrc]="'../assets/iconos/CSS.png'"
-      [showImage]="true"
-      [imageHeight]="80"
-      [imageWidth]="80"
-      [showSubtitle]="false"
-      ></circle-progress>
-    </div>
-    <div class="col-sm-5 col-md-4">
-      <circle-progress
-      [percent]="85"
-      [radius]="100"
-      [outerStrokeWidth]="16"
-      [innerStrokeWidth]="8"
-      [outerStrokeColor]="'#33d0ae'"
-      [innerStrokeColor]="'#c0c0c0'"
-      [animation]="true"
-      [animationDuration]="500"
-      [imageSrc]="'../assets/iconos/angular.svg'"
-      [showImage]="true"
-      [imageHeight]="80"
-      [imageWidth]="80"
-      ></circle-progress>
-    </div>
-    <div class="col-sm-5 col-md-4">
-      <circle-progress
-      [percent]="85"
-      [radius]="100"
-      [outerStrokeWidth]="16"
-      [innerStrokeWidth]="8"
-      [outerStrokeColor]="'#33d0ae'"
-      [innerStrokeColor]="'#c0c0c0'"
-      [animation]="true"
-      [animationDuration]="500"
-      [imageSrc]="'../assets/iconos/java.png'"
-      [showImage]="true"
-      [imageHeight]="80"
-      [imageWidth]="80"
-      ></circle-progress>
-    </div>
-    <div class="col-sm-5 col-md-4">
-      <circle-progress
-      [percent]="85"
-      [radius]="100"
-      [outerStrokeWidth]="16"
-      [innerStrokeWidth]="8"
-      [outerStrokeColor]="'#33d0ae'"
-      [innerStrokeColor]="'#c0c0c0'"
-      [animation]="true"
-      [animationDuration]="500"
-      [imageSrc]="'../assets/iconos/js.png'"
-      [showImage]="true"
-      [imageHeight]="80"
-      [imageWidth]="80"
-      [showSubtitle]="false"
-      ></circle-progress>
-    </div>
-    <div class="col-sm-5 col-md-4">
-      <circle-progress
-      [percent]="85"
-      [radius]="100"
-      [outerStrokeWidth]="16"
-      [innerStrokeWidth]="8"
-      [outerStrokeColor]="'#33d0ae'"
-      [innerStrokeColor]="'#c0c0c0'"
-      [animation]="true"
-      [animationDuration]="500"
-      [imageSrc]="'../assets/iconos/git.png'"
-      [showImage]="true"
-      [imageHeight]="80"
-      [imageWidth]="80"
-      ></circle-progress>
-    </div>        
-    <div class="col-1 btn-mod">
-      <button class="btn btn-light">&#9998;</button>
-    </div>
+  <h1>Hard & Soft skills</h1>
+  <div class="botonskill">
+    <button type="button" routerLink="/newskill" 
+    class="btn btn-primary" *ngIf="isLogged">Nueva skill</button>
   </div>
-</div>
+    <div class="text-center col-sm-5 col-md-4 circulo" *ngFor= "let skill of skill">
+      <circle-progress
+      [percent]="(skill.porcentaje)"
+      [showSubtitle]="false"
+      [radius]="100"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="8"
+      [outerStrokeColor]="'#38ef7d'"
+      [innerStrokeColor]="'#c6ea8d'"
+      [animation]="true"
+      [animationDuration]="500"
+      [imageSrc]="''"
+      [title]="(skill.nombre)"
+      [showTitle]="true"
+      [titleColor]="'#c33764'"
+      [titleFontSize]="'24'"
+      titleFontWeight="bold"
+      [showImage]="false"
+      [imageHeight]="80"
+      [imageWidth]="80"
+      ></circle-progress>
+      <div>
+        <td *ngIf="isLogged">
+          <button
+            class="btn btn-light"
+            routerLink="/editskill/{{skill.id}}"
+          >
+            <i class="bi bi-pencil-fill"></i>
+          </button>
+        </td>
+        <td *ngIf="isLogged">
+          <button class="btn btn-danger" (click)="delete(skill.id)">
+            <i class="bi bi-trash3-fill"></i>
+          </button>
+        </td>
+      </div>
+    </div>      
+  </div>
 
  
