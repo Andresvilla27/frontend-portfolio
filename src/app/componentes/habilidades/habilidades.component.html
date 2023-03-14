@@ -1,7 +1,7 @@
 <div class="row">
   <h1>Hard & Soft skills</h1>
   <div class="botonskill">
-    <button type="button" routerLink="/newskill" 
+    <button type="button" routerLink="/nuevaskill" 
     class="btn btn-primary" *ngIf="isLogged">Nueva skill</button>
   </div>
     <div class="text-center col-sm-5 col-md-4 circulo" *ngFor= "let skill of skill">
@@ -29,7 +29,7 @@
         <td *ngIf="isLogged">
           <button
             class="btn btn-light"
-            routerLink="/editskill/{{skill.id}}"
+            routerLink="/editarskill/{{skill.id}}"
           >
             <i class="bi bi-pencil-fill"></i>
           </button>
