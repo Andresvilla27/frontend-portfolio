@@ -24,6 +24,9 @@ import { EditeducacionComponent } from './componentes/estudios/editeducacion.com
 import { NuevaSkillComponent } from './componentes/habilidades/nueva-skill.component';
 import { EditarSkillComponent } from './componentes/habilidades/editar-skill.component';
 import { EditarAcercaDeComponent } from './componentes/acerca-de/editar-acerca-de.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -58,7 +61,9 @@ import { EditarAcercaDeComponent } from './componentes/acerca-de/editar-acerca-d
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
 }),
-    HttpClientModule
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [
     InterceptorProvider
