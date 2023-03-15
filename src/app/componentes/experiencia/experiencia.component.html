@@ -2,7 +2,7 @@
   <h1 id="titulo">Experiencia Laboral</h1>
   <div class="col-lg-2">
     <button
-      class="btn btn-dark"
+      class="btn btn-success"
       type="button"
       routerLink="/nuevaexp"
       *ngIf="isLogged"
@@ -24,12 +24,12 @@
               class="btn btn-light"
               routerLink="/editexp/{{Experiencia.id}}"
             >
-              <i class="bi bi-pencil-fill"></i>Editar
+              <i class="bi bi-pencil-fill"></i>
             </button>
           </td>
           <td *ngIf="isLogged">
             <button class="btn btn-danger" (click)="delete(Experiencia.id)">
-              Borrar
+              <i class="bi bi-trash3-fill"></i>
             </button>
           </td>
         </tr>

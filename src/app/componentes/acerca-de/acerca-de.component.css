@@ -37,7 +37,10 @@
 }
 @media(max-width: 575px){
     #fotoperfil{
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px #204346;
         left: auto;
+        width: 45%;
     }
 }
 

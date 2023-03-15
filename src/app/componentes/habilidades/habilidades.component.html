@@ -2,25 +2,25 @@
   <h1>Hard & Soft skills</h1>
   <div class="botonskill">
     <button type="button" routerLink="/nuevaskill" 
-    class="btn btn-primary" *ngIf="isLogged">Nueva skill</button>
+    class="btn btn-success" *ngIf="isLogged">Nueva skill</button>
   </div>
     <div class="text-center col-sm-5 col-md-4 circulo" *ngFor= "let skill of skill">
       <circle-progress
       [percent]="(skill.porcentaje)"
+      [showUnits]="false"
       [showSubtitle]="false"
       [radius]="100"
       [outerStrokeWidth]="16"
       [innerStrokeWidth]="8"
-      [outerStrokeColor]="'#38ef7d'"
-      [innerStrokeColor]="'#c6ea8d'"
+      [outerStrokeColor]="'#10c00a'"
+      [innerStrokeColor]="'#72edf2'"
       [animation]="true"
       [animationDuration]="500"
-      [imageSrc]="''"
       [title]="(skill.nombre)"
       [showTitle]="true"
-      [titleColor]="'#c33764'"
+      [titleColor]="'#c0c0c0'"
       [titleFontSize]="'24'"
-      titleFontWeight="bold"
+      [titleFontWeight]="'bold'"
       [showImage]="false"
       [imageHeight]="80"
       [imageWidth]="80"
