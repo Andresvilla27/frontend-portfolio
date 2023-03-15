@@ -1,7 +1,7 @@
-
 footer{
-    color: #fefefe;
-    font-size: 14px;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     text-align: center;

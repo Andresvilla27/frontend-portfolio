@@ -1,9 +1,17 @@
 .row {
+    color: white;
     padding: 20px;
-    
 }
 
 #titulo{
     text-align: center;
-    color: #c0c0c0;
+}
+.nuevaExp{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+td{
+    color: white;
 }
